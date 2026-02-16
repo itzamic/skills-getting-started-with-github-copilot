@@ -152,9 +152,13 @@ button:hover {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  display: block;
 }
 
 .participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 8px 12px;
   margin-bottom: 6px;
   background-color: #f0f4ff;
@@ -167,6 +171,25 @@ button:hover {
 
 .participant-item:hover {
   background-color: #e8ecf5;
+}
+
+.participant-name {
+  margin-right: 12px;
+  font-weight: 600;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(198,40,40,0.08);
 }
 
 .no-participants {
